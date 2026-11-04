@@ -40,8 +40,10 @@ Additionally, Subsystem C coordinates operational state switching between Receiv
 * **Quadrature Clock Generation:** Probed dual LO outputs on a high-speed digital oscilloscope to verify that `LO_F1_0` and `LO_F1_90` maintain a stable $90^\circ \pm 12.5^\circ$ phase relationship at matching amplitudes.
 * **Frequency Tuning Accuracy:** Confirmed output clock synthesis across the 8–16 MHz HF spectrum with an accuracy within 1000 Hz.
 * **Control Rail Verification:** Validated active-low transmit enable (`/TXEN`) logic transitions and verified power rail stability (+3.3V and +5V DC) under active switching.
+<img width="290" height="206" alt="image" src="https://github.com/user-attachments/assets/7fc4c784-bd4a-4297-aa44-22eb8770e511" />
+<img width="769" height="306" alt="image" src="https://github.com/user-attachments/assets/d004b777-0965-4a81-8b9f-25188c2fde3e" />
 
-> *(Insert oscilloscope PLL capture screenshot here: `docs/images/pll_quadrature_waveform.png`)*
+
 
 ### Microcontroller Firmware Bring-up & CAT Integration
 * **Embedded Control Architecture:** Implemented C firmware on an 8-bit ATmega microcontroller to manage frequency selection, system state changes, and peripheral communication over I2C and UART.
@@ -74,8 +76,9 @@ The subsystem is implemented as two discrete daughtercards to isolate RF antenna
 * **Subsystem C.1 Layout:** Routed high-speed digital traces for UART, I2C, and JTAG lines away from clock outputs. Incorporated mounting standoffs ($\varnothing 3.51\text{ mm}$) along the bottom perimeter to provide mechanical support on the mainboard.
 * **Subsystem C.2 Layout:** Built with controlled-impedance RF traces between connectors `J11` (Antenna), `J12` (Receiver), and `J13` (Power Amplifier) to preserve signal fidelity and maximize isolation.
 
-> *(Insert 3D PCB render or Altium layout screenshot here: `docs/images/subsystem_c_altium_render.png`)*
 <img width="401" height="395" alt="295" src="https://github.com/user-attachments/assets/8b2aa751-9238-4359-acef-d76603354488" />
+<img width="512" height="205" alt="image" src="https://github.com/user-attachments/assets/cef7c95f-3528-4a96-9b64-753a57801dab" />
+<img width="512" height="311" alt="image" src="https://github.com/user-attachments/assets/939a0c64-906b-4c1e-bc81-93a18c186943" />
 
 ---
 
