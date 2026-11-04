@@ -1,12 +1,6 @@
 # Local Oscillator and User/Computer Interface (Subsystem C)
 > **ECE295 Hardware Design and Communication — Flexible Radio Transceiver (FLRTRX)**
 
-
-
-
- <p align="center">
-  <img  [![Hardware](https://img.shields.io/badge/Hardware-Altium%20Designer-brightgreen)](#altium-pcb-layout--routing) />
-</p>
 [![Firmware](https://img.shields.io/badge/Firmware-Embedded%20C%20%7C%20ATmega-blue)](#microcontroller-firmware--cat-integration)
 [![Protocol](https://img.shields.io/badge/Protocol-Yaesu%20CAT%20%7C%20UART-orange)](#microcontroller-firmware--cat-integration)
 
@@ -46,6 +40,8 @@ Additionally, Subsystem C coordinates operational state switching between Receiv
 * **Frequency Tuning Accuracy:** Confirmed output clock synthesis across the 8–16 MHz HF spectrum with an accuracy within 1000 Hz.
 * **Control Rail Verification:** Validated active-low transmit enable (`/TXEN`) logic transitions and verified power rail stability (+3.3V and +5V DC) under active switching.
 <img width="290" height="206" alt="image" src="https://github.com/user-attachments/assets/7fc4c784-bd4a-4297-aa44-22eb8770e511" />
+
+
 <img width="769" height="306" alt="image" src="https://github.com/user-attachments/assets/d004b777-0965-4a81-8b9f-25188c2fde3e" />
 
 
