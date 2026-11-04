@@ -55,8 +55,8 @@ Additionally, Subsystem C coordinates operational state switching between Receiv
   * Hardware `DTR` line monitoring for automated computer-controlled TX/RX toggling.
 
 ### Final Integration & RF Switching
-* **C.1 & C.2 Mechanical Mating:** Verified daughtercard clearances and header alignments (standard 2.54 mm pitch, 4-pin male headers) against the FLRTRX mainboard with a 6 mm stack height.
-* **Antenna Switching Performance:** Validated isolation and insertion loss for the C.2 TX/RX switch between the external BNC antenna port (`ANT`), receiver front-end (`RX_SIG`), and power amplifier output (`PA_OUT`).
+* Verified daughtercard clearances and header alignments (standard 2.54 mm pitch, 4-pin male headers) against the FLRTRX mainboard with a 6 mm stack height.
+* Validated isolation and insertion loss for the C.2 TX/RX switch between the external BNC antenna port (`ANT`), receiver front-end (`RX_SIG`), and power amplifier output (`PA_OUT`).
 
 ---
 
@@ -72,9 +72,10 @@ The subsystem is implemented as two discrete daughtercards to isolate RF antenna
 | **C.2** | TX/RX Switch | $38.10\text{ mm} \times 38.10\text{ mm}$ | RF antenna routing, TX isolation, `/TXEN` signal actuation |
 
 ### Altium PCB Layout & Routing
-- **Subsystem C.1 Layout:** Routed high-speed digital traces for UART, I2C, and JTAG lines away from clock outputs. Incorporated mounting standoffs ($\varnothing 3.51\text{ mm}$) along the bottom perimeter to provide mechanical support on the mainboard.
-- **Subsystem C.2 Layout:** Built with controlled-impedance RF traces between connectors `J11` (Antenna), `J12` (Receiver), and `J13` (Power Amplifier) to preserve signal fidelity and maximize isolation.
 
+- **Subsystem C.1 Layout:** Designed production-ready PCB layouts in Altium Designer, optimizing component placement and trace routing to satisfy strict mechanical envelope constraints, connector keep-outs, and DFM guidelines.
+
+Snapshots of my Altium Work
 <p align="center">
   <img width="450" alt="295" src="https://github.com/user-attachments/assets/8b2aa751-9238-4359-acef-d76603354488" />
 </p>
@@ -86,26 +87,6 @@ The subsystem is implemented as two discrete daughtercards to isolate RF antenna
 </p>
 
 
----
-
-## Repository Structure
-
-```text
-├── docs/
-│   ├── ECE295_FLRTRX_ICD_v3.0.pdf      # System Interface Control Document
-│   └── Subsystem_C_Presentation.pdf     # Presentation and test analysis
-├── hardware/
-│   ├── C1_MCU_Oscillator/              # Altium schematics and layout files (C.1)
-│   └── C2_TX_RX_Switch/                # Altium schematics and layout files (C.2)
-├── firmware/
-│   ├── src/                            # ATmega embedded C source code
-│   │   ├── main.c
-│   │   ├── cat_parser.c
-│   │   ├── cat_parser.h
-│   │   └── i2c_pll.c
-│   └── Makefile
-└── README.md
-```
 
 ---
 
