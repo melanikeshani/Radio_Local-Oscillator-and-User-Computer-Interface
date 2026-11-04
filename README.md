@@ -75,6 +75,7 @@ The subsystem is implemented as two discrete daughtercards to isolate RF antenna
 * **Subsystem C.2 Layout:** Built with controlled-impedance RF traces between connectors `J11` (Antenna), `J12` (Receiver), and `J13` (Power Amplifier) to preserve signal fidelity and maximize isolation.
 
 > *(Insert 3D PCB render or Altium layout screenshot here: `docs/images/subsystem_c_altium_render.png`)*
+<img width="401" height="395" alt="295" src="https://github.com/user-attachments/assets/8b2aa751-9238-4359-acef-d76603354488" />
 
 ---
 
