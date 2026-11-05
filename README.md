@@ -1,10 +1,4 @@
 # Local Oscillator and User/Computer Interface (Subsystem C)
-> **ECE295 Hardware Design and Communication — Flexible Radio Transceiver (FLRTRX)**
-
-[![Firmware](https://img.shields.io/badge/Firmware-Embedded%20C%20%7C%20ATmega-blue)](#microcontroller-firmware--cat-integration)
-[![Protocol](https://img.shields.io/badge/Protocol-Yaesu%20CAT%20%7C%20UART-orange)](#microcontroller-firmware--cat-integration)
-
----
 
 ## Project Overview
 
